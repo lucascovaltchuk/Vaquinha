@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url('https://www.everwallpaper.co.uk/cdn/shop/products/green-gradient-ombre-wallpaper-mural-hall.jpg?v=1640104580'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    background-color: rgba(76, 175, 80, 0.9); /* Cor de fundo com transparência */
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para o header */
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4d4d4;
+}
+
+main {
+    padding: 5em 2em 2em; /* Adiciona espaço extra no topo para compensar o header fixo */
+}
+
+.section {
+    margin: 2em auto;
+    padding: 2em;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo com leve transparência */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.campaign {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.campaign:hover {
+    transform: translateY(-10px);
+}
+
+.campaign img.campaign-image {
+    max-width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 16px;
+    border-radius: 50%; /* Torna as imagens redondas */
+}
+
+.campaign h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.campaign button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.campaign button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: rgba(76, 175, 80, 0.9);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url('https://www.everwallpaper.co.uk/cdn/shop/products/green-gradient-ombre-wallpaper-mural-hall.jpg?v=1640104580'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    background-color: rgba(76, 175, 80, 0.9); /* Cor de fundo com transparência */
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para o header */
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4d4d4;
+}
+
+main {
+    padding: 5em 2em 2em; /* Adiciona espaço extra no topo para compensar o header fixo */
+}
+
+.section {
+    margin: 2em auto;
+    padding: 2em;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo com leve transparência */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+/* Estilos para os formulários */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos na tela */
+    gap: 1em;
+}
+
+form label {
+    font-size: 1.1em;
+    color: #4CAF50;
+    text-align: center; /* Centraliza o texto */
+    width: 100%;
+    max-width: 400px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="file"]:focus,
+form textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+form a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+form a:hover {
+    color: #45a049;
+}

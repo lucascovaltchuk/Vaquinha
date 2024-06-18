@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Vaquinha Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="create.html">Criar Vaquinha</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login" class="section">
+            <div class="content">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="email">Usuário:</label>
+                    <input type="text" id="email" name="email" pattern="[abcde]{5}" title="Usuário deve conter 5 caracteres de a-e" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" pattern="[012345]{5}" title="Senha deve conter 5 caracteres de 0-5" required>
+                    <button type="submit">Entrar</button>
+                </form>
+                <p>Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vaquinha Online. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('login-form');
+
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                // Verifica se o usuário e a senha atendem aos critérios
+                const userRegex = /^[abcde]{5}$/;
+                const passRegex = /^[012345]{5}$/;
+
+                if (userRegex.test(email) && passRegex.test(password)) {
+                    // Login bem-sucedido
+                    alert('Login bem-sucedido! Redirecionando para a página incial.');
+                    window.location.href = '../index.html';
+                } else {
+                    // Login falhou
+                    alert('Usuário ou senha inválidos. Por favor, tente novamente.');
+                    // Pode adicionar mais lógica aqui, como limpar os campos de entrada
+                }
+            });
+        });
+    </script>
+</body>
+</html>
